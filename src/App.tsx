@@ -4,16 +4,18 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import NotFound from "./components/NotFound";
+import Music from "./components/Music";
+import MusicDetail from "./components/MusicDetail";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        {/* <Route path="/music" element={<Music />}></Route>
+        <Route path="/music" element={<Music />}></Route>
         <Route path="/music/:id" element={<MusicDetail />}></Route>
-        <Route path="/playlists/:id" element={<PlaylistsDetail />}></Route>
-        <Route path="/test" element={<Test />}></Route> */}
+        {/* <Route path="/playlists/:id" element={<PlaylistsDetail />}></Route> */}
+        {/* <Route path="/test" element={<Test />}></Route> */}
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>

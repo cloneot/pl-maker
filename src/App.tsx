@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import NotFound from "./components/NotFound";
 import Music from "./components/Music";
 import MusicDetail from "./components/MusicDetail";
+import UserProfile from "./components/UserProfile";
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         <Route path="/music" element={<Music />}></Route>
         <Route path="/music/:id" element={<MusicDetail />}></Route>
         {/* <Route path="/playlists/:id" element={<PlaylistsDetail />}></Route> */}
-        {/* <Route path="/test" element={<Test />}></Route> */}
+
+        <Route path="/users/me" element={<UserProfile />}></Route>
+
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>

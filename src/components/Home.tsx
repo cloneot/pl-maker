@@ -35,6 +35,24 @@ const Home: React.FC = () => {
       <h1>Home</h1>
       <p>Welcome to the Home page!</p>
       <p>{!user ? "Not Logged In" : "username is " + user.username}</p>
+
+      <ul>
+        <li>
+          <a href="/music">Music</a>
+        </li>
+        <li>
+          <a href="/users/me">User Profile</a>
+        </li>
+        <li>
+          <a href="/playlists">Playlists</a>
+        </li>
+        {/* <li>
+          <a href="/test1">Test1</a>
+        </li>
+        <li>
+          <a href="/test2">Test2</a>
+        </li> */}
+      </ul>
     </div>
   );
 };

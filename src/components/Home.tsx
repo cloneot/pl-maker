@@ -28,7 +28,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <main>
       <LogIn />
       <LogOut />
 
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
           <a href="/test2">Test2</a>
         </li> */}
       </ul>
-    </div>
+    </main>
   );
 };
 
